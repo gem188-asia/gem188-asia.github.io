@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page Profesional | Serba Digital</title>
+    <meta name="description" content="Landing page profesional, cepat, dan responsif — lengkap dengan CTA, hero konversi, dan komponen siap pakai untuk GitHub Pages." />
+    <meta name="keywords" content="landing page, template profesional, responsive, github pages, serba digital" />
+    <meta name="author" content="Serba Digital" />
+    <link rel="icon" href="/assets/favicon.ico" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      :root{
+        --bg:#f6f8fb;
+        --card:#ffffff;
+        --accent: #6C5CE7; /* purple */
+        --accent-2: #00B894; /* green */
+        --muted:#6b7280;
+      }
+      *{box-sizing:border-box}
+      body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; background:var(--bg); color:#0f1724}
+
+      /* NAVBAR */
+      .navbar{padding:1rem 0}
+      .navbar-brand img{height:48px}
+      .nav-btn{border-radius:10px;padding:.5rem .85rem}
+      .btn-outline-primary.nav-btn{border:1px solid rgba(108,92,231,0.12);color:var(--accent)}
+      .btn-primary.nav-btn{background:linear-gradient(90deg,var(--accent),#8e7bff);border:0;color:#fff}
+
+      /* HERO */
+      .hero{padding:6rem 0;background:linear-gradient(180deg,rgba(108,92,231,0.08),transparent 40%)}
+      .hero-card{background:var(--card);border-radius:18px;box-shadow:0 10px 30px rgba(16,24,40,0.06);overflow:hidden}
+      .hero-left h1{font-size:2.2rem;font-weight:800;line-height:1.03;margin-bottom:.5rem}
+      @media(min-width:992px){.hero-left h1{font-size:2.6rem}}
+      .hero-lead{color:var(--muted);margin-bottom:1.25rem}
+      .cta-group .btn{min-width:150px}
+
+      /* FEATURE CARDS */
+      .features .card{border-radius:14px;border:0;background:linear-gradient(180deg,#fff,#fbfdff);box-shadow:0 8px 30px rgba(16,24,40,0.04)}
+      .feature-icon{width:56px;height:56px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#8e7bff);color:#fff}
+
+      /* TESTIMONIAL / STATS */
+      .stat{font-weight:700;font-size:1.25rem}
+      .stat-title{color:var(--muted);font-size:.85rem}
+
+      /* FOOTER */
+      footer {border-top:1px solid #eef2f7;background:transparent;padding:2.25rem 0}
+      .small-muted{color:var(--muted)}
+
+      /* Accessibility focus */
+      .btn:focus{outline:3px solid rgba(108,92,231,0.12);outline-offset:3px}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/logo.png" alt="Logo Serba Digital">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item d-none d-lg-block me-3">
+              <a class="nav-link small-muted" href="#features">Fitur</a>
+            </li>
+            <li class="nav-item d-none d-lg-block me-3">
+              <a class="nav-link small-muted" href="#pricing">Harga</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="btn btn-outline-primary nav-btn" href="#">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary nav-btn" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card p-4 p-lg-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6 p-5 hero-left">
+              <h1>Landing page profesional — cepat, bersih, dan fokus konversi</h1>
+              <p class="hero-lead">Template siap pakai untuk startup, portofolio, dan kampanye produk. Mudah disesuaikan dan langsung dapat di-deploy ke GitHub Pages.</p>
+
+              <div class="d-flex flex-wrap gap-2 cta-group">
+                <a href="#" class="btn btn-primary btn-lg nav-btn">Mulai Sekarang</a>
+                <a href="#features" class="btn btn-outline-secondary btn-lg nav-btn">Lihat Fitur</a>
+              </div>
+
+              <div class="row mt-4 g-3">
+                <div class="col-6 col-md-4">
+                  <div class="stat">99%</div>
+                  <div class="stat-title">Kepuasan Pengguna</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat">0.8s</div>
+                  <div class="stat-title">Waktu Muat Rata</div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat">Mobile-First</div>
+                  <div class="stat-title">Desain Responsif</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 p-4 p-lg-5">
+              <!-- visual / card list -->
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="feature-icon">
+                        <!-- simple SVG rocket -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 9 7 7 9C5 11 3 17 3 17C3 17 9 15 11 13C13 11 18 8 18 8C18 8 16 2 12 2Z" fill="white"/></svg>
+                      </div>
+                      <div>
+                        <div class="fw-bold">Performa Optimal</div>
+                        <div class="small text-muted">Kode ringan, optimasi gambar, dan preconnect.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="feature-icon" style="background:linear-gradient(135deg,#00B894,#00E6A5)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L12 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      </div>
+                      <div>
+                        <div class="fw-bold">Desain Modern</div>
+                        <div class="small text-muted">Tipografi rapi, spasi seimbang, dan komponen yang dapat dikustom.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="feature-icon" style="background:linear-gradient(135deg,#ff7a59,#ffb86b)">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h16" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      </div>
+                      <div>
+                        <div class="fw-bold">Deploy Mudah</div>
+                        <div class="small text-muted">Langsung cocok untuk GitHub Pages dan hosting statis lainnya.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col-12">
+            <h3 class="fw-bold">Fitur Unggulan</h3>
+            <p class="text-muted">Komponen yang diperlukan untuk landing page profesional tanpa kerumitan.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <div class="mb-3 d-inline-block feature-icon bg-primary" style="background:linear-gradient(135deg,var(--accent),#8e7bff)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L12 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h5 class="fw-bold">Performance</h5>
+              <p class="small text-muted">Optimized images, lazy load, dan ukuran bundle kecil.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <div class="mb-3 d-inline-block feature-icon" style="background:linear-gradient(135deg,#00B894,#00E6A5)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h5 class="fw-bold">Responsif</h5>
+              <p class="small text-muted">Tata letak adaptif untuk semua perangkat.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <div class="mb-3 d-inline-block feature-icon" style="background:linear-gradient(135deg,#ff7a59,#ffb86b)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h5 class="fw-bold">Customizable</h5>
+              <p class="small text-muted">Mudah diganti warna, teks, dan gambar sesuai brand Anda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <strong>Serba Digital</strong>
+            <div class="small text-muted">Landing page profesional — Siap deploy ke GitHub Pages</div>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="small text-muted me-3">Terms</a>
+            <a href="#" class="small text-muted me-3">Privacy</a>
+            <span class="small text-muted">© "Nama Anda"</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
